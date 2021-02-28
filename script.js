@@ -14,6 +14,7 @@ console.log(user.name);
 console.log(user.age);
 console.log(user.hight);
 console.log(user.place);
+console.log("------------------");
 
 
 
@@ -27,6 +28,7 @@ console.log(user2.name);
 console.log(user2.age);
 console.log(user2.hight);
 console.log(user2.place);
+console.log("------------------");
 
 
 
@@ -46,21 +48,25 @@ let user7 = {
     name: "Dmitry"
 }
 
+
 Object.assign(user4, user5, user6, user7);
 for(let key in user4) {
     console.log(user[key]);
 }
+console.log("------------------");
 
 let userClone = Object.assign({}, user4);
   for (let key in userClone){
       console.log(userClone[key]);
   }
+  console.log("------------------");
 
   var saying= new Map();
   saying.set("first", "+22 922 22 22").set("smone", "+66 666 66 66").set("smth", "+11 111 11 11");
   for (let [key, value] of saying){
       console.log(key + " - " + value); 
   }
+  console.log("------------------");
   
 
 
